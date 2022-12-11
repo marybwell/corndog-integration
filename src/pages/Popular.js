@@ -7,7 +7,6 @@ import PopularMovies from "../components/PopularMovies";
 const Popular = () => {
     return (
         <div className="popular">
-            <Logo />
             <Navigation />
             <PopularMovies />
             <Footer />

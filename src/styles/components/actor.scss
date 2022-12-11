@@ -37,7 +37,7 @@
         }
 
         ul {
-            color: $color-2;
+           
             padding-top: 5px;
             display: grid;
             height: 100%;
@@ -68,7 +68,6 @@
 
             &:nth-child(1) {
                 font-weight: bold;
-                color: $color-1;
             }
         }
     }

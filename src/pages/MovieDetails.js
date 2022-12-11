@@ -29,7 +29,6 @@ const MovieDetails = (props) => {
     return(
         <React.Fragment>
             <div className="details-container">
-                <Logo />
                 <div className="movie_card" id="bright">
                     <div className="info_section">
                         <div className="movie_header">
