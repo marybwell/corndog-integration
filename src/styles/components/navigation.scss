@@ -1,5 +1,8 @@
 .navigation {
     background-color: #312c3e;
+    position: sticky;
+    top: 0;
+    left: 0;
   
     a {
       margin: 5px;
@@ -7,15 +10,16 @@
       color: #fefbd0;
       font-family: Oswald;
     }
+
     input {
       padding: 6px;
       margin-top: 8px;
       font-size: 17px;
       border: none;
       border-radius: 5px;
-      font-family: Roboto;
       outline: 0;
     }
+
     button {
       padding: 6px;
       margin-top: 8px;
@@ -23,17 +27,15 @@
       font-size: 17px;
       border: none;
       border-radius: 5px;
-      font-family: Roboto;
-  
     }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
   }
   
-  .container {
-    width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
   
   

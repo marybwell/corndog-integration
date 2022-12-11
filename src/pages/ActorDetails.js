@@ -28,7 +28,7 @@ const MovieDetails = (props) => {
 
     return (
         <React.Fragment>
-            <div className="details-container">
+            <div className="container details-container">
                 <div className="movie_card" id="bright">
                     <div className="info_section">
                         <div className="movie_header">
@@ -71,9 +71,6 @@ const MovieDetails = (props) => {
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div className="footer-container">
-                <Footer />
             </div>
         </React.Fragment>
     );

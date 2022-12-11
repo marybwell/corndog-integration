@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Movie from "./Movie";
 import { useHistory } from 'react-router-dom';
 
 const CategoriesMovies = (props) => {
@@ -34,25 +33,34 @@ const CategoriesMovies = (props) => {
     return (
         <div className="categoriesMovies">
             {!idGenre && (
-                <div className="sort-container">
-                    <li value={id} onClick={onClick}>
-                        {categories.map(genre => {
-                            return <ul value={genre.id}><button value={genre.id}>{genre.name}</button></ul>
-                        })}
-                    </li>
+                <div className="sort-container" value={id} onClick={onClick}>
+                    {categories.map(genre => {
+                        return <button value={genre.id}>{genre.name}</button>
+                    })}
                 </div>)}
 
-            {idParam ? (
-                <ul className="categoriesMovies-list">
-                    {data.map((movie) => (
-                        <Movie movie={movie} key={movie.id} onClickMovie={() => history.push('/movieDetails', { id: movie.id })} />
-                    ))}
-                </ul>
-            ) : (
-                <div className="placeholder-container">
-                    <h4>Select category</h4>
-                </div>
-            )}
+            <div>
+                {idParam ? (
+                    <ul className="categoriesMovies-list">
+                        {data.map((movie) => (
+                            <div className='movie' onClick={() => history.push('/movieDetails', { id: movie.id })}>
+                                <img src={`https://image.tmdb.org/t/p/original${movie.backdrop_path}`} alt="poster" />
+                                <div className='container'>
+                                    <div>
+                                        <h2>{movie.title}</h2>
+                                        <p>Release date: {movie.release_date}</p>
+                                    </div>
+                                    <button>PLAY NOW</button>
+                                </div>
+                            </div>
+                        ))}
+                    </ul>
+                ) : (
+                    <div className="placeholder-container">
+                        <h4>Select category</h4>
+                    </div>
+                )}
+            </div>
         </div>
     )
 }

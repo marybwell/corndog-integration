@@ -6,10 +6,8 @@ import SearchMovie from "../components/SearchMovie";
 
 const Search = () => {
     return (
-        <div className="search">
-            <Navigation />
+        <div className="container">
             <SearchMovie />
-            <Footer />
         </div>
     )
 }

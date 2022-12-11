@@ -6,10 +6,8 @@ import CategoriesMovies from "../components/CategoriesMovies";
 
 const Categories = () => {
     return (
-        <div className="categories">
-            <Navigation />
+        <div className="container">
             <CategoriesMovies />
-            <Footer />
         </div>
     )
 }

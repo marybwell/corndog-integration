@@ -5,10 +5,12 @@ import Search from "./pages/Search";
 import Categories from "./pages/Categories";
 import MovieDetails from "./pages/MovieDetails";
 import ActorDetails from "./pages/ActorDetails";
+import Navigation from "./components/Navigation";
 
 const App = () => {
   return (
     <BrowserRouter>
+      <Navigation />
       <Switch>
         <Route path="/" exact component={Popular} />
         <Route path="/search" exact component={Search} />

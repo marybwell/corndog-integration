@@ -1,14 +1,7 @@
-body {
-    background-color: #1f1f1f;
-    color: #fefbd0;
-    font-family: Roboto;
-    h1 {
-      font-family: Oswald;
-    }
-  
-  }
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto&display=swap");
 
-
+@import "./reset.scss";
+@import "./global.scss";
 @import "./components/footer.scss";
 @import "./components/logo.scss";
 @import "./components/navigation.scss";
@@ -18,4 +11,3 @@ body {
 @import "./components/categoriesMovies.scss";
 @import "./components/movieDetails.scss";
 @import "./components/actor.scss";
-@import "./reset.scss";

@@ -15,9 +15,9 @@ const Actor = (props) => {
                 alt="profile"
             />
             <div className="actorContainer">
-                <ul>
-                    <li className="actorName">{actor.original_name}</li>
-                </ul>
+                
+                    <p>{actor.original_name}</p>
+            
             </div>
         </div>
     )

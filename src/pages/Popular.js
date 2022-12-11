@@ -6,10 +6,8 @@ import PopularMovies from "../components/PopularMovies";
 
 const Popular = () => {
     return (
-        <div className="popular">
-            <Navigation />
+        <div className="container">         
             <PopularMovies />
-            <Footer />
         </div>
     )
 }
