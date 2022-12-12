@@ -6,11 +6,13 @@ import Categories from "./pages/Categories";
 import MovieDetails from "./pages/MovieDetails";
 import ActorDetails from "./pages/ActorDetails";
 import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
     <BrowserRouter>
       <Navigation />
+      
       <Switch>
         <Route path="/" exact component={Popular} />
         <Route path="/search" exact component={Search} />
@@ -18,6 +20,7 @@ const App = () => {
         <Route path="/movieDetails" exact component={MovieDetails} />
         <Route path="/actorDetails" exact component={ActorDetails} />
       </Switch>
+      <Footer />
     </BrowserRouter>
   )
 }

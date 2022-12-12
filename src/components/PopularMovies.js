@@ -3,6 +3,9 @@ import axios from 'axios';
 import Movie from './Movie';
 import { useHistory } from 'react-router-dom';
 
+
+
+
 const PopularMovies = () => {
     //BACKEND
     const [popular, setPopular] = useState([]);

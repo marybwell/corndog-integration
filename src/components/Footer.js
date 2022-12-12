@@ -1,14 +1,25 @@
-import React from 'react';
+import React from "react";
+import Logo from "./Logo";
 
 const Footer = () => {
-    return (
-        <div className='footer'>
-            <a href="www.facebook.com"><img src="../images/facebook.jpg" alt="facebook" /></a>
-            <a href="www.instagram.com"><img src="../images/instagram.jpg" alt="instagram" /></a>
-            <a href="www.youtube.com"><img src="../images/youtube.jpg" alt="youtube" /></a>
-            <p>© CORNDOG 2022-2023, all rights reserved</p>
+  return (
+    <div className="footer">
+      <div>
+        <ul>
+          <li>Popular</li>
+          <li>Search</li>
+          <li>Categories</li>
+          <li>About Us</li>
+        </ul>
+      </div>
+      <div className="container">
+        <div className="logo-footer">
+          <Logo />
         </div>
-    )
-}
+        <p>Corn Dog inc. Copyright ©</p>
+      </div>
+    </div>
+  );
+};
 
 export default Footer;

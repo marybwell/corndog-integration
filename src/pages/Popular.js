@@ -1,8 +1,7 @@
 import React from "react";
-import Logo from "../components/Logo";
-import Navigation from "../components/Navigation";
-import Footer from "../components/Footer";
 import PopularMovies from "../components/PopularMovies";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
 const Popular = () => {
     return (
