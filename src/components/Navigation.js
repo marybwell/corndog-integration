@@ -11,7 +11,7 @@ const Navigation = () => {
         </div>
         <div>
           <NavLink activeClassName="nav-active" exact to="/">
-            Popular
+            Home
           </NavLink>
           <NavLink activeClassName="nav-active" exact to="/search">
             Search

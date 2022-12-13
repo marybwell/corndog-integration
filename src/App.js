@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import Popular from "./pages/Popular";
+import Home from "./pages/Home";
 import Search from "./pages/Search";
 import Categories from "./pages/Categories";
 import MovieDetails from "./pages/MovieDetails";
@@ -14,7 +14,7 @@ const App = () => {
       <Navigation />
       
       <Switch>
-        <Route path="/" exact component={Popular} />
+        <Route path="/" exact component={Home} />
         <Route path="/search" exact component={Search} />
         <Route path="/categories" exact component={Categories} />
         <Route path="/movieDetails" exact component={MovieDetails} />

@@ -1,12 +1,12 @@
+.slider {
+  margin-top: 50px;
+  width: 100%;
 
-.popularMovies {
-  margin-top: 70px;
   h1 {
     font-size: 24px;
     font-family: Oswald;
     margin-bottom: 10px;
   }
-  width: 100%;
 
   .swiper-button-next,
   .swiper-button-prev {
@@ -26,7 +26,7 @@
       filter: brightness(0.5) saturate(0.8);
     }
 
-    .container {
+    .movie-container {
       padding: 1rem 3rem;
       position: absolute;
       top: 0;
@@ -34,7 +34,7 @@
     }
 
     h2 {
-      font-size: 20px;
+      font-size: 24px;
       font-family: Oswald;
     }
 
@@ -46,15 +46,15 @@
       font-family: Oswald;
       margin-top: 10px;
       background: red;
-      padding: 8px 15px;
+      padding: 8px 20px;
       border: 0;
       outline: none;
       color: #fefbd0;
       border-radius: 3px;
 
-        svg {
-            margin-right: 8px;
-        }
+      svg {
+        margin-right: 8px;
+      }
     }
   }
 }
