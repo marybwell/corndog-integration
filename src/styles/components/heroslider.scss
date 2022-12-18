@@ -1,0 +1,68 @@
+.heroslider {
+  --swiper-pagination-color: red;
+  --swiper-pagination-bullet-inactive-color: white;
+
+  .movie {
+    width: 100%;
+    max-width: 100%;
+    height: calc(100vh - 87px);
+    position: relative;
+
+    .hero {
+      max-width: 100%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.53);
+    }
+
+    .movie-container {
+      position: absolute;
+      top: 30%;
+      left: 100px;
+      max-width: 687px;
+    }
+
+    h2 {
+      font-size: 65px;
+      font-family: Oswald;
+      text-transform: uppercase;
+    }
+
+    b {
+      font-size: 32px;
+      font-family: Oswald;
+      text-transform: uppercase;
+      font-weight: 700;
+      display: block;
+    }
+    p{
+        margin-top: 20px;
+    }
+    button {
+      font-family: Oswald;
+      font-size: 22px;
+      margin-top: 10px;
+      background: #da2e1a;
+      padding: 8px 30px;
+      border: 0;
+      outline: none;
+      color: #fefbd0;
+      border-radius: 30px;
+    }
+    .rating {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    .emoiles {
+        width: 150px;
+        height: auto;
+        
+    }
+  }
+
+  .swiper-pagination-bullet {
+    opacity: 1;
+  }
+}

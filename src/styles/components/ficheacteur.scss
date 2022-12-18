@@ -1,0 +1,29 @@
+.ficheacteur {
+  position: relative;
+  margin-top: 50px ;
+  img {
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 13 / 9;
+  }
+
+  .text {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    text-align: center;
+    font-family: Oswald;
+  }
+  h2 {
+    font-size: 60px;
+
+  }
+  h3 {
+    font-size: 40px;
+  }
+
+ p {
+    font-size: 30px;
+ }
+}

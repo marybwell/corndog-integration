@@ -21,7 +21,8 @@ const MovieSlider = (props) => {
     >
       {movies.map((movie, index) => {
         return (
-          <SwiperSlide>
+          <>
+          {movie.backdrop_path !== null && <SwiperSlide>
             <div className="movie" key={movie.id}>
               <img
                 src={`https://image.tmdb.org/t/p/original${movie.backdrop_path}`}
@@ -40,7 +41,8 @@ const MovieSlider = (props) => {
                 </button>
               </div>
             </div>
-          </SwiperSlide>
+          </SwiperSlide>}
+          </>
         );
       })}
     </Swiper>
