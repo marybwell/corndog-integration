@@ -5,7 +5,7 @@ const Actor = (props) => {
     const { actor, onClickActor } = props;
 
     return (
-        <div className="actor" onClick={onClickActor}>
+        <div  onClick={onClickActor}>
             <img
                 src={
                     actor.profile_path ?
@@ -14,11 +14,11 @@ const Actor = (props) => {
                 }
                 alt="profile"
             />
-            <div className="actorContainer">
+            <div>
                 
-                    <p>{actor.original_name}</p>
+                    <p className="actor">{actor.original_name}</p>
             
-            </div><iframe width="1268" height="713" src="https://www.youtube.com/embed/E2TVEtHvUNQ" title="DC The Don - On The Low (Unreleased)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </div>
     )
 }

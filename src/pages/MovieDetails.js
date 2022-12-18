@@ -26,43 +26,68 @@ const MovieDetails = (props) => {
 
   return (
     <React.Fragment>
-      <div class="container">
-        <div>
+      <div className="container-moviedetails">
+        <div className="stats">
+          <h1>{detail.title}</h1>
+          <p>
+            {detail.release_date} | {detail.runtime} min{" "}
+          </p>
+        </div>
+
+        <div className="moviedetails">
+          <img
+            className="affiche"
+            src={`https://image.tmdb.org/t/p/original${detail.poster_path}`}
+            alt="poster"
+          />
+          <iframe
+            width="1268"
+            src="https://www.youtube.com/embed/ptHA9mBHgO8"
+            title="I Survived Country's Oldest vs Newest Gym!"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div className="genres">
+          {genres.map((g) => {
+            return (
+              <div>
+                <a key={g.id} className="type">
+                  <button>{g.name}</button>
+                </a>
+              </div>
+            );
+          })}
           <div>
-            <div>
-              <img
-                src={`https://image.tmdb.org/t/p/original${detail.poster_path}`}
-                alt="poster"
-              />
-              <h1>{detail.title}</h1>
-              <h4>{detail.release_date}</h4>
-              <span>{detail.runtime} min</span>
-              {genres.map((g) => {
-                return (
-                  <a key={g.id} className="type">
-                    {g.name}
-                  </a>
-                );
-              })}
-            </div>
-            <div>
-              <p>{detail.overview}</p>
-            </div>
-            <p>Acteurs ayant joué dans ce film</p>
-            <ul>
-              {credits.slice(0, 6).map((credit) => {
-                return (
-                  <Actor
-                    actor={credit}
-                    key={credit.id}
-                    onClickActor={() =>
-                      history.push("/actorDetails", { id: credit.id })
-                    }
-                  />
-                );
-              })}
-            </ul>
+            <p>Rating : {detail.vote_average}</p>
           </div>
+        </div>
+
+        <div className="synopsis">
+          <h2>Synopsis</h2>
+          {detail.overview}
+          <hr />
+        </div>
+
+        <div>
+          <div className="actors">
+            <h2>Actors</h2>
+          </div>
+
+          <ul className="actors">
+            {credits.slice(0, 5).map((credit) => {
+              return (
+                <Actor
+                  actor={credit}
+                  key={credit.id}
+                  onClickActor={() =>
+                    history.push("/actorDetails", { id: credit.id })
+                  }
+                />
+              );
+            })}
+          </ul>
         </div>
       </div>
     </React.Fragment>

@@ -15,7 +15,7 @@ const Footer = () => {
       <div className="container">
         <div className="logo-footer">
           <Logo />
-        </div>
+        </div> 
         <p>Corn Dog inc. Copyright ©</p>
       </div>
     </div>
