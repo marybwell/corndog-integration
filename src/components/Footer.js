@@ -6,10 +6,10 @@ const Footer = () => {
     <div className="footer">
       <div>
         <ul>
-          <li>Popular</li>
-          <li>Search</li>
-          <li>Categories</li>
-          <li>About Us</li>
+         <a href="/"> <li>Home</li></a>
+         <a href="/search"> <li>Search</li></a>
+         <a href="/categories"> <li>Categories</li></a>
+         <a href="/about-us"> <li>About Us</li></a>
         </ul>
       </div>
       <div className="container">
