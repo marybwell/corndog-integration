@@ -8,8 +8,6 @@ import SimilarMovies from "../components/SimilarMovies";
 import HeroMovies from "../components/HeroMovies";
 import FicheActeur from "../components/FicheActeur";
 import HomeCategories from "../components/HomeCategories";
-import Logo from "../components/Logo";
-import Recommandations from "../components/Recommandations";
 
 const Home = () => {
   return (

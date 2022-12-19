@@ -58,6 +58,7 @@ const Categories = (props) => {
                   <div className="container">
                     <div>
                       <h2>{movie.title}</h2>
+
                       <p>Release date: {movie.release_date}</p>
                     </div>
                     <button>PLAY NOW</button>

@@ -3,10 +3,12 @@
   --swiper-pagination-bullet-inactive-color: white;
 
   .movie {
+
     width: 100%;
     max-width: 100%;
     height: calc(100vh - 87px);
     position: relative;
+
 
     .hero {
       max-width: 100%;
@@ -22,11 +24,14 @@
       left: 100px;
       max-width: 687px;
     }
-
+    
     h2 {
       font-size: 65px;
       font-family: Oswald;
       text-transform: uppercase;
+      
+      
+      
     }
 
     b {

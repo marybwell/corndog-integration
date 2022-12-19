@@ -7,6 +7,7 @@ import MovieDetails from "./pages/MovieDetails";
 import ActorDetails from "./pages/ActorDetails";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
+import AboutUs from "./pages/AboutUs";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/categories" exact component={Categories} />
         <Route path="/movieDetails" exact component={MovieDetails} />
         <Route path="/actorDetails" exact component={ActorDetails} />
+        <Route path="/about-us" exact component={AboutUs} />
       </Switch>
       <Footer />
     </BrowserRouter>

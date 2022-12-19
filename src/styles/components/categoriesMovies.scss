@@ -40,8 +40,11 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+        width: 100%;
+        
 
         .movie {
+            
             background-color: #312c3e;
             display: flex;
             align-items: center;
@@ -62,6 +65,7 @@
                 color: #fefbd0;
                 border: none;
                 border-radius: 28px ;
+                
             }
 
 

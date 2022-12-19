@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Logo from "../components/Logo";
-import Footer from "../components/Footer";
 import Actor from "../components/Actor";
 import { useHistory } from "react-router-dom";
 

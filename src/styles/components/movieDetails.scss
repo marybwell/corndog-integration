@@ -11,66 +11,71 @@
       font-family: Oswald;
       font-size: 30px;
     }
-    img {
+    ul, img {
       height: 340px;
       margin-right: 15px;
       aspect-ratio: 22 / 34;
       object-fit: cover;
-    }
+      
+      }
 
-    .actor:last-child img {
-      margin-right: 0;
+      .actor:last-child img {
+        margin-right: 0;
+      }
     }
-  }
-  .synopsis {
-    font-family: Oswald;
-    h2 {
-      font-size: 30px;
-      margin-top: 30px;
+    .synopsis {
+      font-family: Oswald;
+      h2 {
+        font-size: 30px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+      }
+    }
+    button {
+      font-family: Oswald;
+      margin-top: 15px;
+      background: #da2e1a;
+      padding: 8px 40px;
+      border: 0;
+      outline: none;
+      color: #fefbd0;
+      border-radius: 20px;
+      margin-right: 15px;
+    }
+    .stats {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      p {
+        font-family: Oswald;
+        font-size: 20px;
+      }
+    }
+    h1 {
+      font-family: Oswald;
+      font-size: 40px;
       margin-bottom: 15px;
     }
+
+    .moviedetails {
+      display: flex;
+      .affiche {
+        height: 500px;
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
+      }
+      iFrame {
+        height: 500px;
+        padding-left: 15px;
+      }
+    }
   }
-  button {
-    font-family: Oswald;
-    margin-top: 15px;
-    background: #da2e1a;
-    padding: 8px 40px;
-    border: 0;
-    outline: none;
-    color: #fefbd0;
-    border-radius: 20px;
-    margin-right: 15px;
-  }
-  .stats {
+
+  .genres {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    p {
-      font-family: Oswald;
-      font-size: 20px;
-    }
-  }
-  h1 {
     font-family: Oswald;
-    font-size: 40px;
-    margin-bottom: 15px;
+    justify-content: space-between;
   }
 
-  .moviedetails {
-    display: flex;
-    .affiche {
-      height: 500px;
-    }
-    iFrame {
-      height: 500px;
-      padding-left: 15px;
-    }
-  }
-}
-
-.genres {
-  display: flex;
-  align-items: center;
-  font-family: Oswald;
-  justify-content: space-between;
-}

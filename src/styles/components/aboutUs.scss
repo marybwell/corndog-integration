@@ -1,0 +1,30 @@
+.person {
+  h2 {
+    font-family: Oswald;
+    font-size: 40px;
+    margin-bottom: 50px;
+
+    @media screen and (max-width: 768px) {
+      text-align: center;
+      font-size: 25px;
+    }
+  }
+
+  p {
+    width: 800px;
+    margin-left: auto;
+    text-align: center;
+
+    @media screen and (max-width: 768px) {
+      margin: 0 auto;
+      width: 370px;
+      font-size: 15px;
+    }
+
+    @media screen and (max-width: 768px) {
+      hr {
+        width: 100px;
+      }
+    }
+  }
+}
