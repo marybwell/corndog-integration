@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Logo from "../components/Logo";
-import Footer from "../components/Footer";
 import Actor from "../components/Actor";
 import { useHistory } from "react-router-dom";
+import Recommandations from "../components/Recommandations";
 
 const MovieDetails = (props) => {
   const id = props.location.state.id;
   const URL = `https://api.themoviedb.org/3/movie/${id}?api_key=5b5802d0e99f98c8d53e4aa2c2de07d6&language=en-US`;
   const URL_CREDITS = `https://api.themoviedb.org/3/movie/${id}/credits?api_key=5b5802d0e99f98c8d53e4aa2c2de07d6&language=en-US`;
+  const URL_VIDEO = `https://api.themoviedb.org/3/movie/${id}/videos?api_key=a67b57849deb687f2cd49d7a8298b366&language=en-US`;
+  const [video, setVideo] = useState([]);
   const [detail, setDetail] = useState({});
   const [genres, setGenres] = useState([]);
   const [credits, setCredits] = useState([]);
@@ -21,6 +22,12 @@ const MovieDetails = (props) => {
     });
     axios.get(URL_CREDITS).then((res) => {
       setCredits(res.data.cast);
+    });
+    axios.get(URL_VIDEO).then((res) => {
+      const findTeaser = res.data.results.find(
+        (item) => item.type === "Teaser"
+      );
+      setVideo(findTeaser);
     });
   }, [URL, URL_CREDITS]);
 
@@ -42,23 +49,21 @@ const MovieDetails = (props) => {
           />
           <iframe
             width="1268"
-            src="https://www.youtube.com/embed/ptHA9mBHgO8"
-            title="I Survived Country's Oldest vs Newest Gym!"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            src={`https://www.youtube.com/embed/${video.key}`}
+            allow="fullscreen; picture-in-picture"
             allowfullscreen
           ></iframe>
         </div>
         <div className="genres">
-          {genres.map((g) => {
-            return (
-              <div>
+          <div>
+            {genres.map((g) => {
+              return (
                 <a key={g.id} className="type">
                   <button>{g.name}</button>
                 </a>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
           <div>
             <p>Rating : {detail.vote_average}</p>
           </div>
@@ -88,6 +93,10 @@ const MovieDetails = (props) => {
               );
             })}
           </ul>
+        </div>
+        <div className="container recommandations">
+          <h3>Recommandations</h3>
+          <Recommandations />
         </div>
       </div>
     </React.Fragment>

@@ -9,6 +9,7 @@ import HeroMovies from "../components/HeroMovies";
 import FicheActeur from "../components/FicheActeur";
 import HomeCategories from "../components/HomeCategories";
 import Logo from "../components/Logo";
+import Recommandations from "../components/Recommandations";
 
 const Home = () => {
   return (
@@ -23,11 +24,12 @@ const Home = () => {
         <NowPlaying />
         <FicheActeur />
         <HomeCategories />
+
         <div className="container pre-footer">
           <h2>MORE THAN ONE MILLION MOVIES AND <br/> TV SERIES RIGHT HERE FOR YOU</h2>
           <h3>ONLY OFFERED ON</h3>
           <img className="logo" src="../images/logocorndog.png" alt="logo" />
-
+          
         </div>
       </div>
     </>

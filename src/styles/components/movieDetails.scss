@@ -4,30 +4,30 @@
   margin-top: 50px;
   .actors {
     display: flex;
+    justify-content: space-between;
 
     h2 {
-        margin-bottom: 15px;
-        font-family: Oswald;
-        font-size: 30px;
+      margin-bottom: 15px;
+      font-family: Oswald;
+      font-size: 30px;
     }
     img {
-        height: 340px;
-        margin-right: 15px;
-
-    }
-    img:last-child {
-        margin-right: 0px;
+      height: 340px;
+      margin-right: 15px;
+      aspect-ratio: 22 / 34;
+      object-fit: cover;
     }
 
-
-
+    .actor:last-child img {
+      margin-right: 0;
+    }
   }
   .synopsis {
     font-family: Oswald;
     h2 {
-        font-size: 30px;
-        margin-top: 30px;
-        margin-bottom: 15px;
+      font-size: 30px;
+      margin-top: 30px;
+      margin-bottom: 15px;
     }
   }
   button {
@@ -71,9 +71,6 @@
 .genres {
   display: flex;
   align-items: center;
-
-  p {
-    margin-left: 679px;
-    font-family: Oswald;
-  }
+  font-family: Oswald;
+  justify-content: space-between;
 }
