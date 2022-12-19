@@ -3,9 +3,8 @@ import HeroSlider from "./HeroSlider";
 
 const HeroMovies = () => {
   const mesFilms = [
-
-    
     {
+      id: 680,
       title: "Pulp Fiction",
       backdrop_path:
         "/suaEOtk1N1sgg2MTM7oZd2cfVp3.jpg",
@@ -15,6 +14,7 @@ const HeroMovies = () => {
         "A burger-loving hit man, his philosophical partner, a drug-addled gangster`s moll and a washed-up boxer converge in this sprawling, comedic crime caper. Their adventures unfurl in three stories that ingeniously trip back and forth in time.",
     },
     {
+      id: 15,
       title: "Citizen Kane",
       backdrop_path:
         "/3Ne0EpyuhZkIbfSyDzzMaNkb7Z7.jpg",
@@ -24,6 +24,7 @@ const HeroMovies = () => {
         "Newspaper magnate, Charles Foster Kane is taken from his mother as a boy and made the ward of a rich industrialist. As a result, every well-meaning, tyrannical or self-destructive move he makes for the rest of his life appears in some way to be a reaction to that deeply wounding event.",
     },
     {
+      id: 1370,
       title: "Rambo III",
       backdrop_path:
         "/nEuPSz6LhmrtYp7K56dbsmomuqA.jpg",
@@ -33,6 +34,7 @@ const HeroMovies = () => {
         "Combat has taken its toll on Rambo, but he's finally begun to find inner peace in a monastery. When Rambo's friend and mentor Col. Trautman asks for his help on a top secret mission to Afghanistan, Rambo declines but must reconsider when Trautman is captured.",
     },
     {
+      id: 62,
       title: "2001: A Space Odyssey",
       backdrop_path:
         "/kCEXA22ASuq7Y29jnngyaisyA0X.jpg",
@@ -42,6 +44,7 @@ const HeroMovies = () => {
         "Humanity finds a mysterious object buried beneath the lunar surface and sets off to find its origins with the help of HAL 9000, the world's most advanced super computer.",
     },
     {
+      id: 103,
       title: "Taxi Driver",
       backdrop_path:
         "/a58oc5qGNazb3QOxEH8eG5S7gjr.jpg",

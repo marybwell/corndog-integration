@@ -16,6 +16,8 @@ const MovieDetails = (props) => {
   const history = useHistory();
 
   useEffect(() => {
+    window.scrollTo(0,0);
+
     axios.get(URL).then((res) => {
       setDetail(res.data);
       setGenres(res.data.genres);
@@ -25,7 +27,7 @@ const MovieDetails = (props) => {
     });
     axios.get(URL_VIDEO).then((res) => {
       const findTeaser = res.data.results.find(
-        (item) => item.type === "Teaser"
+        (item) => item.type === "Trailer"
       );
       setVideo(findTeaser);
     });
@@ -51,16 +53,16 @@ const MovieDetails = (props) => {
             width="1268"
             src={`https://www.youtube.com/embed/${video.key}`}
             allow="fullscreen; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         </div>
         <div className="genres">
           <div>
             {genres.map((g) => {
               return (
-                <a key={g.id} className="type">
-                  <button>{g.name}</button>
-                </a>
+                <button onClick={() => { history.push('/categories', { id: g.id }) }} key={g.id} className="type">
+                  <span>{g.name}</span>
+                </button>
               );
             })}
           </div>
