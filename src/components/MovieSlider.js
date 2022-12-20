@@ -16,8 +16,22 @@ const MovieSlider = (props) => {
     <Swiper
       navigation={true}
       modules={[Navigation]}
-      slidesPerView={3}
+      slidesPerView={1.5}
       spaceBetween={20}
+      breakpoints={{
+        600: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        800: {
+          slidesPerView: 2.5,
+          spaceBetween: 20,
+        },
+        1000: {
+          slidesPerView: 3,
+          spaceBetween: 20
+        }
+      }}
     >
       {movies.map((movie, index) => {
         return (

@@ -35,7 +35,7 @@ const MovieDetails = (props) => {
 
   return (
     <React.Fragment>
-      <div className="container-moviedetails">
+      <div className="container container-moviedetails">
         <div className="stats">
           <h1>{detail.title}</h1>
           <p>
@@ -78,7 +78,7 @@ const MovieDetails = (props) => {
         </div>
 
         <div>
-          <div className="actors">
+          <div className="">
             <h2>Actors</h2>
           </div>
 

@@ -55,7 +55,7 @@ const Categories = (props) => {
                     src={`https://image.tmdb.org/t/p/original${movie.backdrop_path}`}
                     alt="poster"
                   />
-                  <div className="container">
+                  <div className="movie-container">
                     <div>
                       <h2>{movie.title}</h2>
 

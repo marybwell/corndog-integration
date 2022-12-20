@@ -1,29 +1,49 @@
 .ficheacteur {
   position: relative;
-  margin-top: 50px ;
+  margin-top: 50px;
   img {
     max-width: 100%;
     width: 100%;
     object-fit: cover;
     aspect-ratio: 13 / 9;
+    filter: brightness(0.5) saturate(0.8);
   }
 
   .text {
-    position: absolute;
-    top: 40%;
-    left: 5%;
     text-align: center;
     font-family: Oswald;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+
   }
   h2 {
     font-size: 60px;
 
+    @media screen and (max-width: 768px) {
+      font-size: 32px;
+    }
   }
   h3 {
     font-size: 40px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 36px;
+    }
   }
 
- p {
+  p {
     font-size: 30px;
- }
+
+    @media screen and (max-width: 768px) {
+      font-size: 22px;
+    }
+  }
 }

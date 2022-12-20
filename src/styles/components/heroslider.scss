@@ -21,16 +21,25 @@
     .movie-container {
       position: absolute;
       top: 30%;
-      left: 100px;
+      left: 10%;
       max-width: 687px;
+
+      @media screen and (max-width: 768px) {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: calc(100% - 48px);
+      }
     }
     
     h2 {
       font-size: 65px;
       font-family: Oswald;
       text-transform: uppercase;
-      
-      
+
+      @media screen and (max-width: 768px) {
+        font-size: 28px;
+      }
       
     }
 
@@ -40,6 +49,10 @@
       text-transform: uppercase;
       font-weight: 700;
       display: block;
+
+      @media screen and (max-width: 768px) {
+        font-size: 18px;
+      }
     }
     p{
         margin-top: 20px;
@@ -54,6 +67,10 @@
       outline: none;
       color: #fefbd0;
       border-radius: 30px;
+
+      @media screen and (max-width: 768px) {
+        font-size: 16px;
+      }
     }
     .rating {
         display: flex;

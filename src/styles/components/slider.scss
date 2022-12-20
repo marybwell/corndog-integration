@@ -8,22 +8,34 @@
     margin-bottom: 10px;
   }
 
+  .swiper {
+    @media screen and (max-width: 768px) {
+      margin-right: -16px;
+    }
+  }
+
   .swiper-button-next,
   .swiper-button-prev {
     color: #fefbd0;
 
     &:after {
       font-size: 25px;
+      @media screen and (max-width: 768px) {
+        font-size: 15px;
+      }
     }
+
   }
 
   .movie {
     position: relative;
 
+
     img {
       max-width: 400px;
       width: 100%;
       filter: brightness(0.5) saturate(0.8);
+
     }
 
     .movie-container {
@@ -31,15 +43,24 @@
       position: absolute;
       top: 0;
       left: 0;
+
     }
 
     h2 {
       font-size: 20px;
       font-family: Oswald;
+      @media screen and (max-width: 768px) {
+        font-size: 20px;
+
+      }
     }
 
     p {
       font-size: 12px;
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
     }
 
     button {
@@ -51,10 +72,14 @@
       outline: none;
       color: #fefbd0;
       border-radius: 3px;
+      @media screen and (max-width: 768px) {
+        padding: 5px 8px;
+        font-size: 10px;
+      }
+    }
 
       svg {
         margin-right: 8px;
       }
     }
-  }
-}
+  
